@@ -23,6 +23,8 @@ export default function Home() {
       }
     });
 
+    // クリーンアップ
+    // コンポーネントが削除されるときに監視を解除する
     return () => unsub();
   }, [docRef, text]);
 
